@@ -7,6 +7,9 @@
   "author": "Nima Shokouhfar",
   "license": "MIT",
   "scripts": {
+    "setup-npmrc": "node setup-npmrc.js",
+    "install-packages": "npm install --userconfig ./.npmrc",
+    "init-packages": "node setup-npmrc.js && npm install --userconfig ./.npmrc",
     "build": "npx tsc",
     "test": "jest"
   },
